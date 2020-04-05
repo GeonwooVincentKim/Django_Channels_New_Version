@@ -9,7 +9,7 @@ from rest_framework.generics import (
     UpdateAPIView
 )
 
-from chat.models import Chat, Contact
+from ..models import Chat, Contact
 from .serializers import ChatSerializer
 
 
