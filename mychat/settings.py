@@ -25,7 +25,7 @@ SECRET_KEY = 'e*bpjm+(@nl$9ar7ezbk98w4x%k=)z)@(8ds=wgh#efu-uma7m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-react-games.herokuapp.com']
+ALLOWED_HOSTS = ['django-react-games.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -66,7 +66,7 @@ ROOT_URLCONF = 'mychat.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -144,7 +144,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'build/static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
@@ -163,8 +163,13 @@ REST_FRAMEWORK = {
 }
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:1234',
+    'http://localhost:3000',
 )
 
 ACCOUNT_EMAIL_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'username'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+HOST_URL = 'https://django-react-games.herokuapp.com'
+if DEBUG:
+    HOST_URL = 'http://127.0.0.1:8000'

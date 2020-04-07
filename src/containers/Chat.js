@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 //import Sidepanel from './Sidepanel/Sidepanel';
 import WebSocketInstance from '../websocket';
-import Hoc from '../hoc/hoc';
+//import Hoc from '../hoc/hoc';
 
 
 class Chat extends React.Component {

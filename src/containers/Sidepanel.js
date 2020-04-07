@@ -1,6 +1,6 @@
 import React from 'react';
-import axios from 'axios';
-import { Spin, Icon } from 'antd';
+import Icon from '@ant-design/icons';
+import { Spin } from 'antd';
 import { connect } from 'react-redux';
 import * as authActions from '../store/actions/auth';
 import * as navActions from '../store/actions/nav';

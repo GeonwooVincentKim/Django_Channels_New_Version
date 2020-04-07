@@ -110,29 +110,29 @@ class WebSocketService {
     // It has Timeout function, and Chat.js importing this function.
     // Basically ensure that we wait for the connection to be steady.
     // Call this the wait for socket connection method.
-    waitForSocketConnection(callback){
-        const socket = this.socketRef;
-        const recursion = this.waitForSocketConnection;
-        // It can maintain connected conditions.
-
-        setTimeout(
-            // Set Times by seconds milliseconds.
-            function(){
-            if (socket.readyState === 1){
-                console.log('connection is secure');
-                // if didn't pass in a callback,
-                // then call the callback.
-                if(callbacks != null){
-                    callback();
-                }
-                // Otherwise will just return.
-                return;
-            } else {
-                console.log('waiting for connection...');
-                recursion(callback);
-            }
-        }, 1);
-    }
+//    waitForSocketConnection(callback){
+//        const socket = this.socketRef;
+//        const recursion = this.waitForSocketConnection;
+//        // It can maintain connected conditions.
+//
+//        setTimeout(
+//            // Set Times by seconds milliseconds.
+//            function(){
+//            if (socket.readyState === 1){
+//                console.log('connection is secure');
+//                // if didn't pass in a callback,
+//                // then call the callback.
+//                if(callbacks != null){
+//                    callback();
+//                }
+//                // Otherwise will just return.
+//                return;
+//            } else {
+//                console.log('waiting for connection...');
+//                recursion(callback);
+//            }
+//        }, 1);
+//    }
 }
 
 // Call Method 'getInstance()' which is static.
