@@ -25,7 +25,7 @@ SECRET_KEY = 'e*bpjm+(@nl$9ar7ezbk98w4x%k=)z)@(8ds=wgh#efu-uma7m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-react-games.herokuapp.com']
 
 
 # Application definition
@@ -146,6 +146,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 SITE_ID = 1
 

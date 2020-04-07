@@ -8,6 +8,10 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.14.4"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
