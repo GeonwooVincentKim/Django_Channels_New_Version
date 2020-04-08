@@ -17,10 +17,13 @@ Or Error with run "npm start", "npm run deploy", "npm run start", "npm run build
 <Using npm commanders>
 0. npm install --only=dev && npm install && npm run build
 1. heroku buildpacks:clear
-2. git checkout -b masterbranch
-3. git push heroku masterbranch
-4. npm update
-5. npm run build dev
-6. npm run build
+2. git init
+3. git add .
+4. git checkout -b masterbranch
+5. git push heroku masterbranch
+6. git push heroku master
+7. npm update
+8. npm run build dev
+9. npm run build
 
 --> https://stackoverflow.com/questions/48854585/error-with-run-npm-run-eject-error-remove-untracked-files-stash-or-commit-a
