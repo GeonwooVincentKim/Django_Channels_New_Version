@@ -27,3 +27,18 @@ Or Error with run "npm start", "npm run deploy", "npm run start", "npm run build
 9. npm run build
 
 --> https://stackoverflow.com/questions/48854585/error-with-run-npm-run-eject-error-remove-untracked-files-stash-or-commit-a
+
+
+# Watch this 
+1. https://stackoverflow.com/questions/36587671/i-cant-do-git-push-heroku-master
+2. https://stackoverflow.com/questions/2971550/how-to-push-different-local-git-branches-to-heroku-master
+
+
+<New way to solve H10 Problem>
+1. git init
+2. git add .
+3. git commit -m "Contents"
+(3-1. git checkout -b tempbranch)
+4. git push heroku tempbranch:master
+(Wait a minute..)
+5. heroku restart

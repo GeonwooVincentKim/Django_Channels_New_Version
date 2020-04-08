@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="%PUBLIC_URL%/favicon.ico" />
     <link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
-
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -21,6 +21,9 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
     <div id="app" style="width: 100%;"></div>
     <script src="./src/index.js"></script>
     <script>
@@ -57,30 +60,6 @@
 
             $("#status-options").removeClass("active");
         });
-        //
-        //function newMessage() {
-        //	message = $(".message-input input").val();
-        //	if($.trim(message) == '') {
-        //		return false;
-        //	}
-        //	$('<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
-        //	$('.message-input input').val(null);
-        //	$('.contact.active .preview').html('<span>You: </span>' + message);
-        //	$(".messages").animate({ scrollTop: $(document).height() }, "fast");
-        //};
-        //
-        //$('.submit').click(function() {
-        //  newMessage();
-        //});
-        //
-        //$(window).on('keydown', function(e) {
-        //  if (e.which == 13) {
-        //    newMessage();
-        //    return false;
-        //  }
-        //});
-        ////# sourceURL=pen.js
-        //
     </script>
 </body>
 </html>

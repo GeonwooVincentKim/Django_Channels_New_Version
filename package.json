@@ -8,6 +8,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=json",
     "eject": "react-scripts eject",
+    "dev": "parcel src/index.html",
     "postinstall": "npm run build"
   },
   "engines": {
@@ -43,5 +44,4 @@
     "redux-thunk": "^2.3.0",
     "socket.io-client": "^2.3.0"
   }
-
 }

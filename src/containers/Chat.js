@@ -132,7 +132,10 @@ class Chat extends React.Component {
                 style={{ marginBottom: arr.length - 1 === i ? "300px" : "15px" }}
                 // Check whether the author is currentUser.
                 className={message.author === currentUser ? 'replies' : 'sent'}>
-                <img src="http://emilcarlsson.se/assets/mikeross.png" />
+                <img
+                  src="http://emilcarlsson.se/assets/mikeross.png"
+                  alt="profile-pic"
+                />
                 <p>
                     {message.content}
                     <br />
@@ -157,7 +160,7 @@ class Chat extends React.Component {
     }
 
     render(){
-        const messages = this.state.messages;
+        // const messages = this.state.messages;
         return (
             // Define the value property by using Short-circuit-evaluation
             // Like value={this.state.message || ''}
