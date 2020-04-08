@@ -14,8 +14,8 @@ class ChatConsumer(WebsocketConsumer):
         # Call this method here to get_last_10_messages()
         # based on the ID of teh chat that's being connected to.
         messages = get_last_10_messages(data['chatId'])
-        print(data['chatId'])
-        print(messages)   # QuerySet [<Message: A>, <Message: B>]
+        # print(data['chatId'])
+        # print(messages)   # QuerySet [<Message: A>, <Message: B>]
         content = {
             'command': 'messages',
             'messages': self.messages_to_json(messages)

@@ -26,6 +26,7 @@ function ExpandedRow(_ref) {
       cellComponent = _ref.cellComponent,
       fixHeader = _ref.fixHeader,
       fixColumn = _ref.fixColumn,
+      horizonScroll = _ref.horizonScroll,
       className = _ref.className,
       expanded = _ref.expanded,
       componentWidth = _ref.componentWidth,
@@ -60,7 +61,7 @@ function ExpandedRow(_ref) {
       prefixCls: prefixCls,
       colSpan: colSpan
     }, contentNode));
-  }, [children, Component, fixHeader, fixColumn, className, expanded, componentWidth, colSpan, scrollbarSize]);
+  }, [children, Component, fixHeader, horizonScroll, className, expanded, componentWidth, colSpan, scrollbarSize]);
 }
 
 var _default = ExpandedRow;

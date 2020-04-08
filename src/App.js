@@ -1,43 +1,6 @@
-//import React from 'react';
-//import { connect } from 'react-redux';
-//import { BrowserRouter as Router } from 'react-router-dom';
-//import * as actions from './store/actions/auth';
-//import BaseRouter from './routes';
-//import Sidepanel from './containers/Sidepanel';
-//import Profile from './containers/Profile';
-//
-//
-//class App extends React.Component {
-//    componentDidMount() {
-//        this.props.onTryAutoSignup();
-//    }
-//
-//    render() {
-//        return(
-//            <Router>
-//                <div id="frame">
-//                    <Sidepanel />
-//                    <div className="content">
-//                        <Profile />
-//                        <BaseRouter />
-//                    </div>
-//                </div>
-//            </Router>
-//        );
-//    };
-//}
-//
-//const mapDispatchToProps = dispatch => {
-//    return {
-//        onTryAutoSignup: () => dispatch(actions.authCheckState())
-//    }
-//}
-//
-//export default connect(null, mapDispatchToProps)(App);
 import React from 'react';
 import { connect } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import * as actions from './store/actions/auth';
 import BaseRouter from './routes';
 import Sidepanel from './containers/Sidepanel';
 import Profile from './containers/Profile';
@@ -46,6 +9,7 @@ import * as authActions from './store/actions/auth';
 import * as navActions from './store/actions/nav';
 import * as messageActions from "./store/actions/message";
 import WebSocketInstance from "./websocket";
+import "./assets/style.css";
 
 class App extends React.Component {
     componentDidMount() {

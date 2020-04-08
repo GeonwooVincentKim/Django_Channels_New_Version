@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Chat from './containers/Chat';
 //import WebSocketInstance from './websocket';
 //import { BrowserRouter as Router } from 'react-router-dom';
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux';

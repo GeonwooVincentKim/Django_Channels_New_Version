@@ -1,0 +1,29 @@
+ModuleNotFoundError: No module named 'django.utils.six' [duplicate]
+--> pip install Django==2.2
+--> https://stackoverflow.com/questions/59524941/modulenotfounderror-no-module-named-django-utils-six
+
+React failed to push some refs to git@heroku.com
+Or Error with run "npm start", "npm run deploy", "npm run start", "npm run build"
+
+<Make Procfile and .browserlist>
+1. Procfile
+--> release: python manage.py migrate
+     web: gunicorn mychat.wsgi --log-file -
+
+2. browserlist
+-1. Move browserlist Dictionary (or Tuple) from "package.json"
+-2. Paste in ".browserlist" file
+
+<Using npm commanders>
+0. npm install --only=dev && npm install && npm run build
+1. heroku buildpacks:clear
+2. git init
+3. git add .
+4. git checkout -b masterbranch
+5. git push heroku masterbranch
+6. git push heroku master
+7. npm update
+8. npm run build dev
+9. npm run build
+
+--> https://stackoverflow.com/questions/48854585/error-with-run-npm-run-eject-error-remove-untracked-files-stash-or-commit-a
