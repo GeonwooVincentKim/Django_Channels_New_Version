@@ -11,8 +11,10 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
+# import django_heroku
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mychat.settings')
 
+# django_heroku.settings(locals())
 application = get_wsgi_application()
 application = DjangoWhiteNoise()
