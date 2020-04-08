@@ -16,7 +16,7 @@ class WebSocketService {
     }
 
     connect(chatUrl) {
-        const path = `${SOCKET_URL}/ws/chat/${chatUrl}//`;
+        const path = `${SOCKET_URL}/ws/chat/${chatUrl}/`;
         console.log(path);
         this.socketRef = new WebSocket(path);
         this.socketRef.onopen = () => {
