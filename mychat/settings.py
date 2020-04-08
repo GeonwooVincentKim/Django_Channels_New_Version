@@ -168,6 +168,7 @@ CORS_ORIGIN_WHITELIST = (
 ACCOUNT_EMAIL_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'username'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+CSRF_COOKIE_NAME = "csrftoken"
 
 HOST_URL = 'https://django-react-games.herokuapp.com'
 if DEBUG:

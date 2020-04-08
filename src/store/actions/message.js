@@ -35,6 +35,8 @@ const getUserChatsSuccess = chats => {
 
 export const getUserChats = (username, token) => {
   return dispatch => {
+    axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+    axios.defaults.xsrfCookieName = "csrftoken";
     axios.defaults.headers = {
       "Content-Type": "application/json",
       Authorization: `Token ${token}`
