@@ -134,7 +134,6 @@ class WebSocketService {
         }, 1);
     }
 }
-
 // Call Method 'getInstance()' which is static.
 const WebSocketInstance = WebSocketService.getInstance();
 

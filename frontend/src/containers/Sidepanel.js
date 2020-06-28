@@ -13,6 +13,7 @@ class Sidepanel extends React.Component {
 
     state = {
         loginForm: true
+
     }
 
     waitForAuthDetails() {

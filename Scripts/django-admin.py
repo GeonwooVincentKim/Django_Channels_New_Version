@@ -1,4 +1,4 @@
-#!E:\Django\Django_Channels\New_Channels\Scripts\python.exe
+#!e:\django\django_channels\new_channels\scripts\python.exe
 from django.core import management
 
 if __name__ == "__main__":
